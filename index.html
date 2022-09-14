@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>BTC to USD</title>
+</head>
+<body>
+    <section class="form_top">
+
+    <div class="exchange_box">
+       
+    <h1 class="main_title">Money exchange USD to BTC</h1>
+    <p class="text_form">Current price  Bitcoin <img src="./img/bitcoin.png" width="24" height="24"> = $ 21000 USD</p>
+    <p class="text_q">How much USD would you like to change?</p>
+    <p>
+        <label><span class="text_value">USD $ </span></label>
+        <input type="number" id="inputdol" placeholder="$" oninput="moneyConverter(this.value)" onchange="moneyConverter(this.value)">
+    </p>
+   <p class="text_form">You can buy following amount of Bitcoin</p> 
+    <p class="text_value">  <img src="./img/bitcoin.png" alt="bitcoin_icon" width="24"
+        height="24"> BTC:   <output id="outputbtc"></output> </p>
+         
+        <!--Button popup-->
+        <button type="button" class="btn btnSuccess" onclick="modal('myModal3')"><span class="btn_text">Purchase</span></button>
+         <div id="myModal3" class="modal">
+            <div class="modalContent modalSuccess">
+                <div class="modalHeader">
+                    <span class="modalClose" data-close="true" title="Close">&times;</span>
+                    Payment Status
+                </div>
+                <div class="modalBody">
+                    <p class="modal_text">Purchase was Succesful !</p>
+                </div>
+                <div class="modalFooter">
+                    <!--Footer text-->
+Exchange service
+
+<!--End Footer text-->
+                    <div>
+                        <button type="button" class="btn" data-close="true">Close</button>
+                        <button type="button" class="btn btnWarning">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of button-->
+</div>
+
+<div class="box_descr">
+
+<img class="phone" src="./img/phone.jpg" alt="" width="320" height="320">
+
+</div>
+
+    </section>
+
+
+
+
+    <script src="./bitcoin_purchase.js"></script>
+    <script src="./my.js"></script>
+</body>
+</html>
+
+
+
